@@ -2,8 +2,13 @@
 #autoload -U colors && colors
 
 # Prompt
-PS1='%B%{$fg[blue]%}%#%  %{$fg[green]%}%n@%{$fg[cyan]%}%m %{$fg[yellow]%}%~%{$fg[white]%}${vcs_info_msg_0_}
+if [ `whoami` = "root" ]; then
+  PS1='%B%{$fg[blue]%}%#%  %{$fg[red]%}%n@%{$fg[cyan]%}%m %{$fg[yellow]%}%~%{$fg[white]%}${vcs_info_msg_0_}
 %{$fg[red]%}$ %{$reset_color%}'
+else 
+  PS1='%B%{$fg[blue]%}%#%  %{$fg[green]%}%n@%{$fg[cyan]%}%m %{$fg[yellow]%}%~%{$fg[white]%}${vcs_info_msg_0_}
+%{$fg[red]%}$ %{$reset_color%}'
+fi
 
 # enable color support of ls and also add handy aliases
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
