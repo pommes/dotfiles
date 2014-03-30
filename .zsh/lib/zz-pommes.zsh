@@ -6,7 +6,7 @@ PS1='%B%{$fg[blue]%}%#%  %{$fg[green]%}%n@%{$fg[cyan]%}%m %{$fg[yellow]%}%~%{$fg
 %{$fg[red]%}$ %{$reset_color%}'
 
 # enable color support of ls and also add handy aliases
-if [ "$TERM" != "dumb" ]; then
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
     #alias dir='ls --color=auto --format=vertical'
