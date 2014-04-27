@@ -1,6 +1,8 @@
 # Colors
 #autoload -U colors && colors
 
+export EDITOR=vim
+
 # Prompt
 if [ `whoami` = "root" ]; then
   PS1='%B%{$fg[blue]%}%#%  %{$fg[red]%}%n@%{$fg[cyan]%}%m %{$fg[yellow]%}%~%{$fg[white]%}${vcs_info_msg_0_}
