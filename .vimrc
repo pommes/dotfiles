@@ -1,8 +1,8 @@
 set nocompatible
 
 " Initialize Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
+"runtime bundle/vim-pathogen/autoload/pathogen.vim
+"execute pathogen#infect()
 
 " Enable syntax highlighting
 syntax on
@@ -10,6 +10,7 @@ filetype plugin indent on
 
 " Colorscheme see https://github.com/hukl/Smyck-Color-Scheme
 color smyck
+color elflord
 
 " Add line numbers
 set number
