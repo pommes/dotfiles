@@ -7,7 +7,7 @@ export EDITOR=vim
 if [ `whoami` = "root" ]; then
   PS1='%B%{$fg[blue]%}%#%  %{$fg[red]%}%n@%{$fg[cyan]%}%m %{$fg[yellow]%}%~%{$fg[white]%}${vcs_info_msg_0_}
 %{$fg[red]%}$ %{$reset_color%}'
-else 
+else
   PS1='%B%{$fg[blue]%}%#%  %{$fg[green]%}%n@%{$fg[cyan]%}%m %{$fg[yellow]%}%~%{$fg[white]%}${vcs_info_msg_0_}
 %{$fg[red]%}$ %{$reset_color%}'
 fi
@@ -19,3 +19,7 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     #alias dir='ls --color=auto --format=vertical'
     #alias vdir='ls --color=auto --format=long'
 fi
+
+# Disable annoying auto correct
+unsetopt correct_all
+
