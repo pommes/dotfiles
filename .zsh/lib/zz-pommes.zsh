@@ -23,3 +23,9 @@ fi
 # Disable annoying auto correct
 unsetopt correct_all
 
+# Unset nomatch so zsh does not complain about wildcards that
+# # do not match locally (for example in scp where they are on remote).
+# # Another solution would be an alias
+# # e.g.: alias scp='noglob scp'
+unsetopt nomatch
+

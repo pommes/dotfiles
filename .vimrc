@@ -14,7 +14,7 @@ color elflord
 "color molokai
 
 " Add line numbers
-set number
+"set number
 set ruler
 
 " Set encoding
