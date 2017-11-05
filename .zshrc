@@ -13,3 +13,6 @@ export LC_ALL=en_US.UTF-8
 # Load and run compinit
 autoload -U compinit
 compinit -i
+
+# For fuck command
+eval $(thefuck --alias)
